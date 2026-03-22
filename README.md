@@ -4,7 +4,7 @@ A lightweight x64 utility that uses **DLL Sideloading** to intercept and modify 
 
 ## 🛠 Technical Overview
 
-This project implements a proxy for `version.dll`. When placed in the application directory, BongoCat loads this library instead of the system default. It passes all standard version calls to the OS while applying an inline hook to `GetAsyncKeyState`.
+This project implements a proxy for `winhttp.dll`. When placed in the application directory, BongoCat loads this library instead of the system default. It passes all standard winhttp calls to the OS while applying an inline hook to `GetAsyncKeyState`.
 
 ### Specifications
 * **Method:** DLL Sideloading (Search Order Hijacking)
@@ -28,9 +28,9 @@ zig build
 ```
 ### 2. Installation
 
-  Locate the generated version.dll in zig-out/bin/.
+  Locate the generated winhttp.dll in zig-out/bin/.
 
-  Place version.dll in the same folder as BongoCat.exe.
+  Place winhttp.dll in the same folder as BongoCat.exe.
 
 ### 3. Execution
 
