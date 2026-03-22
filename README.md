@@ -21,6 +21,8 @@ This project implements a proxy for `version.dll`. When placed in the applicatio
 
 ### 1. Build
 Compile the project using the master branch of [Zig compiler](https://ziglang.org/download/):
+!!! IMPORTANT !!!
+Use the master branch
 ```bash
 zig build
 ```
