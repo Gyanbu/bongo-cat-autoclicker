@@ -5,8 +5,6 @@ extern "kernel32" fn GetModuleHandleA(lpModuleName: ?LPCSTR) callconv(.winapi) ?
 extern "kernel32" fn GetProcAddress(hModule: HMODULE, lpProcName: LPCSTR) callconv(.winapi) ?FARPROC;
 extern "kernel32" fn VirtualProtect(lpAddress: windows.LPVOID, dwSize: windows.SIZE_T, flNewProtect: windows.DWORD, lpflOldProtect: *windows.DWORD) callconv(.winapi) windows.BOOL;
 
-const MB_OK = 0x00000000;
-const MB_ICONINFORMATION = 0x00000040;
 const PAGE_READWRITE = 0x04;
 
 const HWND = windows.HWND;
